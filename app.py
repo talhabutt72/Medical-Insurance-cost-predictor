@@ -5,8 +5,8 @@ import pandas as pd
 
 st.header("Medical Insurance Cost Predictor")
 
-model = joblib.load("Models\features.pkl")
-cols = joblib.load("Models\features.pkl")
+model = joblib.load(r"Models\features.pkl")
+cols = joblib.load(r"Models\features.pkl")
 
 
 # age	gender	bmi	children	smoker	region	occupation	annual_income_usd	exercise_level	chronic_diseases	doctor_visits_per_year	hospitalizations_last_year	alcohol_consumption_per_week	insurance_plan

@@ -5,7 +5,7 @@ import pandas as pd
 
 st.header("Medical Insurance Cost Predictor")
 
-model = joblib.load(r"Models\features.pkl")
+model = joblib.load(r"Models\model.pkl")
 cols = joblib.load(r"Models\features.pkl")
 
 

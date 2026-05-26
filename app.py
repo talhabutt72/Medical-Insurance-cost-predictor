@@ -1,13 +1,15 @@
 import streamlit as st
 import joblib
 import pandas as pd
+import os
 
 
 st.header("Medical Insurance Cost Predictor")
 
-model = joblib.load(r"Models\model.pkl")
-cols = joblib.load(r"Models\features.pkl")
+BASE_DIR = os.path.dirname(__file__)
 
+model = joblib.load(os.path.join(BASE_DIR, "Models", "model.pkl"))
+cols = joblib.load(os.path.join(BASE_DIR, "Models", "features.pkl"))
 
 # age	gender	bmi	children	smoker	region	occupation	annual_income_usd	exercise_level	chronic_diseases	doctor_visits_per_year	hospitalizations_last_year	alcohol_consumption_per_week	insurance_plan
 
